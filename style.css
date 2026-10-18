@@ -1,0 +1,826 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    color: #FCF1D0;
+    font-family: 'Manrope', sans-serif;
+    background: #5828b0;
+    overflow-x: hidden;
+}
+
+.headicon {
+    display: flex;
+    position: relative;
+    top: 0;
+    height: 75px;
+    width: 100%;
+    background-color: #0D1C42;
+}
+
+.headicon1 h1 {
+    display: flex;
+    position: relative;
+    word-spacing: 8px;
+    top: -32px;
+    left: 42px;
+    font-family: 'Sora', sans-serif;
+}
+
+.headicon1 h1 span {
+    color: #8050D8;
+}
+
+.headicon1 img {
+    border-radius: 6px;
+    display: flex;
+    position: relative;
+    margin-top: 23px;
+    left: 20px;
+    width: 20px;
+    height: 25px;
+}
+
+.headicon h2 {
+    display: flex;
+    position: relative;
+    word-spacing: 2px;
+    top: 22px;
+    left: 360px;
+    font-family: 'Sora', sans-serif;
+}
+
+.headicon h2 span {
+    color: #8050D8;
+}
+
+button {
+    display: flex;
+    position: relative;
+    background: linear-gradient(135deg, #4938F5 0%, #8050D8 50%, #C84ABF 100%);
+    left: 730px;
+    border: none;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    top: 22px;
+    width: 160px;
+    height: 40px;
+    color: #FFFFFF;
+    font-family: 'Manrope', sans-serif;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #3828D8 0%, #6939C4 50%, #AD36A6 100%);
+    box-shadow: 0 8px 25px rgba(73, 56, 245, 0.35);
+}
+
+.honors {
+    display: flex;
+    position: fixed;
+    top: 333px;
+    right: 0;
+    width: 44px;
+    height: 120px;
+    background-color: #000000;
+    border-right: 3px solid #4938F5;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.honors h2 {
+    color: #FFFFFF;
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    margin: 8px 0 0;
+}
+
+.honors h2 span {
+    color: #4938F5;
+}
+
+.honors p {
+    color: #FFFFFF;
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin: 8px 0;
+    margin-top: 35px;
+}
+
+.home {
+    display: flex;
+    position: relative;
+    width: 1200px;
+    height: 560px;
+    top: 20px;
+    left: 116px;
+}
+
+.home-text h1 {
+    display: flex;
+    position: relative;
+    color: #FCF1D0;
+    font-family: 'Manrope', sans-serif;
+    font-size: 120px;
+    margin-top: 125px;
+    left: 80px;
+    line-height: 0.86;
+}
+
+.home-text h1 span {
+    color: #8050D8;
+}
+
+.home-img {
+    display: flex;
+    position: relative;
+    top: 100px;
+    left: 350px;
+    width: 430px;
+    height: 430px;
+}
+
+.home-img img {
+    border-radius: 87px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-img img:hover {
+    box-shadow: 0 10px 29px rgba(11, 5, 70, 0.463);
+}
+
+.video {
+    display: flex;
+    position: relative;
+    left: 84px;
+    top: 40px;
+    width: 430px;
+    height: 120px;
+    background-color: #0D1C42;
+    border-radius: 20px;
+    padding: 25px 10px 10px 30px;
+    flex-direction: column;
+    line-height: 1.5;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video:hover {
+    box-shadow: 0 10px 29px rgba(11, 5, 70, 0.463);
+}
+
+.home-text h2 span {
+    color: #8050D8;
+}
+
+.haqimizda {
+    margin-top: 150px;
+    background-color: #FCF1D0;
+    color: #6939C4;
+    padding: 220px 20px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.sarlavha_qismi {
+    text-align: center;
+    max-width: 1250px;
+    margin-bottom: 250px;
+}
+
+.sarlavha_qismi h1 {
+    font-family: 'Sora', sans-serif;
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 20px;
+    color: #6939C4;
+}
+
+.sarlavha_qismi p {
+    font-size: 34px;
+    line-height: 1.6;
+    color: #3828D8;
+}
+
+.sarlavha_qismi b,
+.sarlavha_qismi u {
+    color: #0c1d47;
+}
+
+.kartalar_qutisi {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 100%;
+    max-width: 1050px;
+}
+
+.pastki_kartalar {
+    display: flex;
+    gap: 35px;
+    width: 100%;
+}
+
+.oq_karta {
+    flex: 1;
+    background-color: #0D1C42;
+    color: #FCF1D0;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.qora_karta {
+    width: 100%;
+    background-color: #1d128e;
+    color: #FCF1D0;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.karta_matni {
+    padding: 45px 45px 45px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.karta_matni h2 {
+    font-family: 'Sora', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #FCF1D0;
+}
+
+.karta_matni p {
+    font-size: 13.5px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    color: #FCF1D0;
+}
+
+.karta_matni b {
+    color: #6939C4;
+}
+
+.qora_karta .karta_matni p {
+    color: #FCF1D0;
+    max-width: 650px;
+}
+
+.qora_karta .karta_matni b {
+    color: #6939C4;
+}
+
+.qalin_matn,
+.qalin_matn b {
+    color: #8050D8 !important;
+}
+
+.xususiyatlar {
+    display: flex;
+    gap: 35px;
+    margin: 15px 0 30px;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #8050D8;
+}
+
+.tugma {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 13px 30px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #4938F5 0%, #8050D8 50%, #C84ABF 100%);
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tugma:hover {
+    background: linear-gradient(135deg, #3828D8 0%, #6939C4 50%, #AD36A6 100%);
+    box-shadow: 0 8px 25px rgba(73, 56, 245, 0.35);
+    transform: translateY(-2px);
+}
+
+.animation-text {
+    width: 100%;
+    background-color: #FCF1D0;
+    overflow: hidden;
+    padding: 130px 0 140px;
+    display: flex;
+    align-items: center;
+}
+
+.animation-text h1 {
+    font-family: 'Sora', sans-serif;
+    font-size: 180px;
+    font-weight: 800;
+    color: #8050D8;
+    opacity: 0.25;
+    white-space: nowrap;
+    width: max-content;
+    flex-shrink: 0;
+    transform: rotate(3deg) translateX(0%);
+    animation: a 25s linear infinite;
+}
+
+@keyframes a {
+    0% {
+        transform: rotate(3deg) translateX(0);
+    }
+    100% {
+        transform: rotate(3deg) translateX(-50%);
+    }
+}
+
+.opa-uka {
+    position: relative;
+    width: 100%;
+    height: 780px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opa-uka #ong {
+    position: absolute;
+    width: 680px;
+    height: 550px;
+    object-fit: cover;
+    left: -320px;
+    top: 80px;
+}
+
+.opa-uka #chap {
+    position: absolute;
+    width: 680px;
+    height: 550px;
+    object-fit: cover;
+    right: -320px;
+    top: 130px;
+}
+
+.opauka-text {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    width: 560px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.opauka-text h1 {
+    font-family: 'Sora', sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.15;
+    color: #FCF1D0;
+    margin-bottom: 28px;
+}
+
+.opauka-text p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #FCF1D0;
+    margin-bottom: 35px;
+}
+
+.opauka-text p b {
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.opauka-text button {
+    left: 0;
+    top: 0;
+    width: 185px;
+    height: 44px;
+    font-size: 14px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #D548B9 0%, #8344DF 50%, #3B38F5 100%);
+}
+.hamkor {
+    padding: 80px 0 110px;
+    background-color: #FCF1D0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.keng {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.keng h2 {
+    font-family: 'Sora', sans-serif;
+    font-size: 57px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    color: #6939C4;
+    margin-bottom: 55px;
+}
+
+.katak {
+    display: grid;
+    grid-template-columns: repeat(20, 175px);
+    row-gap: 45px;
+    column-gap: 60px;
+    animation: b 25s linear infinite;
+}
+
+.katak:hover {
+    animation-play-state: paused;
+}
+
+@keyframes b {
+    100% {
+        transform: rotate(-3deg) translateX(0);
+    }
+    0% {
+        transform: rotate(-3deg) translateX(calc(-50% - 30px));
+    }
+}
+
+.quti {
+    width: 175px;
+    height: 175px;
+    background-color: #FFFFFF;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quti img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.quti:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(65, 49, 249, 0.4);
+}
+.imkoniyatlar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 100px 20px 140px;
+}
+
+.imkoniyat_qutisi {
+    background-color: #0D1C42;
+    width: 100%;
+    max-width: 1050px;
+    border-radius: 30px;
+    padding: 80px 70px 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 15px 45px rgba(11, 5, 70, 0.45);
+}
+
+.imkoniyat_qutisi h1 {
+    font-family: 'Sora', sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    color: #FCF1D0;
+    margin-bottom: 20px;
+}
+
+.asosiy_matn {
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: #FCF1D0;
+    margin-bottom: 65px;
+}
+
+.asosiy_matn b {
+    color: #8050D8;
+}
+
+.imkoniyat {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 55px;
+    column-gap: 45px;
+    width: 100%;
+}
+
+.imkoniyat_element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.imkoniyat_element:hover {
+    transform: translateY(-5px);
+}
+
+.ikonka {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.ikonka img {
+    max-height: 42px;
+    width: auto;
+    object-fit: contain;
+}
+
+.imkoniyat_element h3 {
+    font-family: 'Sora', sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    color: #FCF1D0;
+    margin-bottom: 14px;
+}
+
+.imkoniyat_element p {
+    font-size: 13px;
+    line-height: 1.65;
+    color: #8050D8;
+    max-width: 260px;
+}
+
+.asana_element h3,
+.asana_element p {
+    opacity: 0.6;
+}
+
+.loyihalar {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    width: 100%;
+    max-width: 1350px;
+    height: 620px;
+    margin: 0 auto 120px;
+    padding: 0 60px;
+}
+
+.loyiha_karta {
+    flex: 1;
+    position: relative;
+    height: 100%;
+    border-radius: 26px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(11, 5, 70, 0.35);
+}
+
+.loyiha_karta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.75);
+    transition: transform 0.5s ease;
+}
+
+.loyiha_karta:hover img {
+    transform: scale(1.02);
+}
+
+.loyiha_karta_matni {
+    position: absolute;
+    bottom: 55px;
+    left: 55px;
+    z-index: 2;
+    max-width: 450px;
+}
+
+.loyiha_karta_matni h2 {
+    font-family: 'Sora', sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #FCF1D0;
+    margin-bottom: 20px;
+}
+
+.loyiha_karta_matni p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #FCF1D0;
+    margin-bottom: 35px;
+}
+
+.loyiha_karta_matni p b {
+    color: #FFFFFF;
+}
+
+.tugma_yangi {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 32px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #4938F5 0%, #8050D8 50%, #C84ABF 100%);
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tugma_yangi:hover {
+    background: linear-gradient(135deg, #3828D8 0%, #6939C4 50%, #AD36A6 100%);
+    box-shadow: 0 8px 25px rgba(73, 56, 245, 0.35);
+    transform: translateY(-2px);
+}
+
+.pastki_qism {
+    width: 100%;
+    padding: 80px 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_qutisi {
+    width: 100%;
+    max-width: 1350px;
+    background: 
+        linear-gradient(#0D1C42, #0D1C42) padding-box;
+    border: 4px solid transparent;
+    border-bottom: none;
+    border-radius: 24px 24px 0 0;
+    padding: 70px 65px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 -10px 40px rgba(11, 5, 70, 0.35);
+}
+
+.footer_ustunlar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.footer_logo img {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+.footer_xizmatlar h4,
+.footer_aloqa h4 {
+    font-family: 'Sora', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #FCF1D0;
+    margin-bottom: 22px;
+}
+
+.xizmatlar_royxati {
+    display: flex;
+    gap: 65px;
+}
+
+.xizmatlar_royxati ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.xizmatlar_royxati li {
+    font-size: 13.5px;
+    color: #FCF1D0;
+    opacity: 0.85;
+    cursor: pointer;
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.xizmatlar_royxati li:hover {
+    color: #C84ABF;
+    opacity: 1;
+}
+
+.footer_aloqa p {
+    font-size: 14px;
+    color: #FCF1D0;
+    opacity: 0.9;
+    margin-bottom: 12px;
+}
+
+.qoshiling {
+    margin-top: 20px;
+    margin-bottom: 18px !important;
+}
+
+.eko_belgi {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #6939C4;
+    margin-bottom: 22px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.eko_chap {
+    background: linear-gradient(90deg, #D548B9 0%, #8050D8 100%);
+    color: #FFFFFF;
+    padding: 8px 14px;
+}
+
+.eko_ong {
+    background-color: #FCF1D0;
+    color: #0D1C42;
+    padding: 8px 14px;
+}
+
+.webflow_belgi {
+    background-color: #162856;
+    color: #FCF1D0;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    width: fit-content;
+    margin-bottom: 24px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.huquqiy_havola {
+    display: block;
+    font-size: 11.5px;
+    font-weight: 700;
+    color: #8050D8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.huquqiy_havola:hover {
+    color: #FCF1D0;
+}
+
+.footer_ijtimoiy {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.footer_ijtimoiy img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.footer_ijtimoiy a:hover img {
+    transform: translateY(-3px);
+}
+
+.footer_muallif p {
+    font-size: 12px;
+    font-weight: 700;
+    color: #FCF1D0;
+    opacity: 0.8;
+}
